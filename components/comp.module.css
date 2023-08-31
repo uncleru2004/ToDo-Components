@@ -1,0 +1,16 @@
+.btnDel {
+  background-color: #c3c7ca;
+  border: 0;
+  border-radius: 12px;
+  color: #b82b4a;
+  font-size: 16px;
+  padding: 12px 24px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnDel:hover {
+  background-color: #b82b4a;
+  color: #c3c7ca;
+}
