@@ -1,7 +1,7 @@
 import { memo } from "react";
 import css from "./comp.module.css";
 
-export default memo(function Item({ item, changeCheckedItem, deleleItem }) {
+export default memo(function Item({ item, changeCheckedItem, deleteItem }) {
   const { id, checked, text } = item;
 
   console.log("Item rendered", id);
@@ -15,7 +15,7 @@ export default memo(function Item({ item, changeCheckedItem, deleleItem }) {
       />
 
       <span>{text}</span>
-      <button className={css.btnDel} onClick={() => deleleItem(id)}>
+      <button className={css.btnDel} onClick={() => deleteItem(id)}>
         X
       </button>
     </li>

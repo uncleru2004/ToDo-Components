@@ -19,7 +19,7 @@ export default function ToDoList() {
         ),
       []
     ),
-    deleleItem = useCallback(
+    deleteItem = useCallback(
       (id) => setList((old) => old.filter((item) => item.id !== id)),
       []
     ),
@@ -35,7 +35,7 @@ export default function ToDoList() {
       <List
         list={list}
         changeCheckedItem={changeCheckedItem}
-        deleleItem={deleleItem}
+        deleteItem={deleteItem}
         delChecked={delChecked}
       />
     </fieldset>

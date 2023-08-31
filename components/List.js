@@ -5,7 +5,7 @@ import Item from "./Item";
 export default function List({
   list,
   changeCheckedItem,
-  deleleItem,
+  deleteItem,
   delChecked,
 }) {
   console.log("List rendered");
@@ -22,7 +22,7 @@ export default function List({
           key={item.id}
           item={item}
           changeCheckedItem={changeCheckedItem}
-          deleleItem={deleleItem}
+          deleteItem={deleteItem}
         />
       ))}
       <CheckedDelButton delCheckedItem={delCheckedItem} />
